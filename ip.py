@@ -255,6 +255,26 @@ while True:
                 else:
                     print("\n      "+r+"         XERXES "+g+">>> "+r+"Invalid input.")
     elif c == "09" :
+        os.system("clear")
+        print(g+"UPDATING!!!..."+e)
+        time.sleep(0.5)
+        os.system(" cd $home ")
+        os.system(" rm -rf I.P ")
+        os.system(" git clone https://github.com/D-MythX/I.P ")
+        os.system(" cd I.P ")
+        os.system(" git clone https://github.com/XCHADXFAQ77X/XERXES ")
+        os.system(" git clone https://github.com/rajkumardusad/IP-Tracer ")
+        os.system("cd XERXES")
+        os.system(" gcc -o xerxes xerxes.c ")
+        os.system(" cd .. ")
+        os.system(" cd IP-Tracer ")
+        os.system(" chmod +x install ")
+        os.system(" sh install ")
+        os.system(" clear " )
+        os.system(" cd .. ")
+        time.sleep(1.0)
+        os.system(" chmod +x * ")
+        os.system(" python ip.py ")
         break
     elif c == "10" :
         print(g+"\n["+w+"~"+g+"]"+y+" Don't forget to update when next you launch this tool!")
