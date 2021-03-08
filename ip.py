@@ -239,22 +239,22 @@ while True:
                     va = input("\n      "+g+"       Verify «"+y+""+ai+""+g+"»?? ("+y+"Y"+g+"/"+y+"N"+g+"): ")
                     time.sleep(0.3)
                     if va == "y" or va == "Y" :
-                        print("\n    "+r+"STAND BY!"+y+"...To break, press Ctrl C and manually launch tool"+r)
+                        print("\n"+r+"STAND BY!"+y+"..To break, press Ctrl C and manually launch tool"+r)
                         time.sleep(1.0)
                         os.system(" cd XERXES ")
-                        os.sysyem(" ./xerxes "+ai+" 80")
+                        os.system(" ./xerxes "+ai+" 80")
                         input()
                         os.kill(signal.SIGNIT)
                     elif va == "n" or va == "N" :
-                        print(" \n          "+r+"       XERXES "+g+">>> "+r+"Oops!")
+                        print(" \n          "+r+"            XERXES "+g+">>> "+r+"Oops!")
                         continue
                     else:
-                        print("\n      "+r+"         XERXES "+g+">>> "+r+"Invalid input.")
+                        print("\n      "+r+"           XERXES "+g+">>> "+r+"Invalid input.")
                 elif wa == "2" or wa == "02":
                     break
                 else:
                     print("\n      "+r+"         XERXES "+g+">>> "+r+"Invalid input.")
-    elif c == "09" :
+    elif c == "09" or c == "9":
         os.system("clear")
         print(g+"UPDATING!!!..."+e)
         time.sleep(0.5)
@@ -264,7 +264,7 @@ while True:
         os.system(" cd I.P ")
         os.system(" git clone https://github.com/XCHADXFAQ77X/XERXES ")
         os.system(" git clone https://github.com/rajkumardusad/IP-Tracer ")
-        os.system("cd XERXES")
+        os.system(" cd XERXES ")
         os.system(" gcc -o xerxes xerxes.c ")
         os.system(" cd .. ")
         os.system(" cd IP-Tracer ")
