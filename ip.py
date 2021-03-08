@@ -1,9 +1,11 @@
+#!/usr/bin/env python3
+#Title: I.P
+#Author: D~Myth
+
 import os
 import time
 import socket
-import subprocess
 import signal
-import sys
 
 y = "\033[2;33m"
 g = "\033[2;32m"
@@ -12,7 +14,6 @@ w = "\033[2;37m"
 r = "\033[2;31m"
 e = "\033[0m"
 u = "\033[4m"
-fr = "\033[2;41m"
 B = "\033[2;01m"
 a = socket.gethostname()
 b = socket.gethostbyname(a)
@@ -45,13 +46,13 @@ print("\033[2;33m            ___|   |___ _|  |\033[0m ")
 time.sleep(0.5)
 print(" \033[2;32m          (___________(_)__| \033[2;35m(v0.1)\033[0m")
 time.sleep(1.0)
-print(y+" ______________________________________________")
+print(y+"   ______________________________________________")
 time.sleep(0.5)
 print(B+r+"\n["+w+"!"+r+"] "+u+"DISCLAIMER"+e+":"+B+r+" Developers Assume No liability And Are Not Responsible For Any Misuse And Damage Caused By This Project.\n")
 time.sleep(1.0)
 print(B+r+"["+w+"!"+r+"] Please Be Wise! Use It Legally and Stay safe!"+e)
 time.sleep(0.5)
-print(y+" ______________________________________________")
+print(y+"   ______________________________________________")
 time.sleep(2.0)
 while True:
     print(g+"\n--➣ Enter option:  ")
@@ -62,9 +63,9 @@ while True:
     time.sleep(0.3)
     print(g+"["+w+"03"+g+"]"+y+" My Hostname.")
     time.sleep(0.3)
-    print(g+"["+w+"04"+g+"]"+y+" Find my IP Address.")
+    print(g+"["+w+"04"+g+"]"+y+" My Hostname IP Address.")
     time.sleep(0.3)
-    print(g+"["+w+"05"+g+"]"+y+" Find my IP Address 2.")
+    print(g+"["+w+"05"+g+"]"+y+" Find my IP Address.")
     time.sleep(0.3)
     print(g+"["+w+"06"+g+"]"+y+" Trace IP addresses including mine.")
     time.sleep(0.3)
@@ -74,7 +75,7 @@ while True:
     time.sleep(0.3)
     print(g+"["+w+"09"+g+"]"+y+" Update.(Do this frequently!)")
     time.sleep(0.3)
-    print(g+"["+w+"10"+g+"]"+y+" Quit.")
+    print(g+"["+w+"10"+g+"]"+y+" Exit.")
     time.sleep(0.3)
     c = input(g+"--➢ ")
     if c == "1" or c == "01" :
@@ -123,22 +124,21 @@ while True:
             print(g+"["+w+"✓"+g+"]"+y+" Your OS Hostname is"+p+" '"+a+"'"+y+".\n")
             timesleep(3.0)
     elif c == "4" or c == "04" :
-        os.system("figlet *My I.P* | lolcat")
+        os.system("figlet Hostname IP | lolcat")
         time.sleep(1.0)
-        input(g+"["+w+"•"+g+"]"+y+" Please switch on your hotspot. If DONE, press enter to proceed •")
         print(r+"["+w+"•"+r+"] PROCESSING...")
         time.sleep(3.0)
         print(g+"["+w+"✓"+g+"]"+y+" DONE! \n")
         time.sleep(1.0)
-        print(g+"["+w+"*"+g+"]"+y+" Your IP Address is"+p+" '"+b+"'"+y+".\n")
+        print(g+"["+w+"*"+g+"]"+y+" Your Hostname IP Address is"+p+" '"+b+"'"+y+".\n")
         time.sleep(2.5)
         if b == "127.0.0.1" :
-            print(g+"["+w+"#"+g+"]"+y+" NOTE: "+p+"127.0.0.1"+y+" is the general loopback internet protocol (Hostname's IP). To get your personal IP, try again while Hotspot still active and if such still repeat itself, use option "+g+"["+w+"03"+g+"]"+y+".")
+            print(g+"["+w+"#"+g+"]"+y+" NOTE: "+p+"127.0.0.1"+y+" is the general loopback internet protocol (Hostname's IP). To get your device IP, use option "+g+"["+w+"05"+g+"]"+y+".")
             time.sleep(5.0)
     elif c == "5" or c == "05" :
-        os.system("figlet *My I.P2* | lolcat")
+        os.system("figlet *My IP* | lolcat")
         time.sleep(1.0)
-        input(g+"\n["+w+"~"+g+"]"+y+" Please switch on your hotspot. If you are using Kali windows, its not necessary. press enter to proceed")
+        input(g+"\n["+w+"~"+g+"]"+y+" Please switch on your hotspot(Not necessary for windows users, if DONE press enter to proceed ")
         print(r+"["+w+"•"+r+"] PROCESSING...")
         time.sleep(3.0)
         print(g+"["+w+"✓"+g+"]"+y+" DONE! \n")
@@ -241,10 +241,8 @@ while True:
                     if va == "y" or va == "Y" :
                         print("\n"+r+"STAND BY!"+y+"..To break, press Ctrl C and manually launch tool"+r)
                         time.sleep(1.0)
-                        os.system(" cd XERXES ")
+                        os.system(" cd /data/data/com.termux/files/home/I.P/XERXES ")
                         os.system(" ./xerxes "+ai+" 80")
-                        input()
-                        os.kill(signal.SIGNIT)
                     elif va == "n" or va == "N" :
                         print(" \n          "+r+"            XERXES "+g+">>> "+r+"Oops!")
                         continue
@@ -257,25 +255,35 @@ while True:
     elif c == "09" or c == "9":
         os.system("clear")
         print(g+"UPDATING!!!..."+e)
-        time.sleep(0.5)
+        time.sleep(2.0)
         os.system(" cd $home ")
         os.system(" rm -rf I.P ")
         os.system(" git clone https://github.com/D-MythX/I.P ")
         os.system(" cd I.P ")
-        os.system(" git clone https://github.com/XCHADXFAQ77X/XERXES ")
-        os.system(" git clone https://github.com/rajkumardusad/IP-Tracer ")
-        os.system(" cd XERXES ")
-        os.system(" gcc -o xerxes xerxes.c ")
-        os.system(" cd .. ")
-        os.system(" cd IP-Tracer ")
-        os.system(" chmod +x install ")
-        os.system(" sh install ")
-        os.system(" clear " )
-        os.system(" cd .. ")
-        time.sleep(1.0)
-        os.system(" chmod +x * ")
+        os.system("apt update")
+        os.system("apt upgrade -y")
+        os.system("apt install python -y")
+        os.system("apt install figlet -y")
+        os.system("apt install bash -y")
+        os.system("apt install git -y")
+        os.system("apt install ruby -y")
+        os.system("gem install lolcat")
+        os.system("apt install nmap -y")
+        os.system("git clone https://github.com/XCHADXFAQ77X/XERXES")
+        os.system("git clone https://github.com/rajkumardusad/IP-Tracer")
+        os.system("chmod 777 *")
+        os.system("cd /data/data/com.termux/files/home/I.P/XERXES")
+        os.system("gcc -o xerxes xerxes.c")
+        os.system("cd /data/data/com.termux/files/home/I.P/IP-Tracer")
+        os.system("chmod +x install")
+        os.system("sh install")
+        os.system("cd /data/data/com.termux/files/home/I.P")
+        os.system(" clear")
+        print(g+"["+w+"✓"+g+"]"+y+" UPDATE COMPLETED!!!\n")
+        time.sleep(0.5)
+        print(g+"["+w+"~"+g+"]"+y+" LAUNCHING TOOL IN 10secs..."+e)
+        time.sleep(10.0)
         os.system(" python ip.py ")
-        break
     elif c == "10" :
         print(g+"\n["+w+"~"+g+"]"+y+" Don't forget to update when next you launch this tool!")
         time.sleep(0.5)
