@@ -230,7 +230,7 @@ while True:
             time.sleep(0.3)
             print(g+"["+w+"2"+g+"]"+y+" Go back to main menu.")
             time.sleep(0.3)
-            wa = input(g+"["+w+"+"g+"]"+y+" Select an option :")
+            wa = input(g+"["+w+"+"+g+"]"+y+" Select an option :")
             while True:
                 if wa == "1" or wa == "01" :
                     time.sleep(0.3)
