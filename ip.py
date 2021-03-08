@@ -72,9 +72,9 @@ while True:
     time.sleep(0.3)
     print(g+"["+w+"08"+g+"]"+y+" DoS/DDoS"+r+" ULTRA. "+y+"(Xerxes2)")
     time.sleep(0.3)
-    print(g+"["+w+"10"+g+"]"+y+" Update.(Do this frequently!)")
+    print(g+"["+w+"09"+g+"]"+y+" Update.(Do this frequently!)")
     time.sleep(0.3)
-    print(g+"["+w+"11"+g+"]"+y+" Quit.")
+    print(g+"["+w+"10"+g+"]"+y+" Quit.")
     time.sleep(0.3)
     c = input(g+"--➢ ")
     if c == "1" or c == "01" :
@@ -246,7 +246,7 @@ while True:
                         input()
                         os.kill(signal.SIGNIT)
                     elif va == "n" or va == "N" :
-                        print(" \n                 XERXES >>> Oops!")
+                        print(" \n          "+r+"       XERXES "+g+">>> "+r+"Oops!")
                         continue
                     else:
                         print("\n      "+r+"         XERXES "+g+">>> "+r+"Invalid input.")
@@ -254,9 +254,9 @@ while True:
                     break
                 else:
                     print("\n      "+r+"         XERXES "+g+">>> "+r+"Invalid input.")
-    elif c == "10" :
+    elif c == "09" :
         break
-    elif c == "11" :
+    elif c == "10" :
         print(g+"\n["+w+"~"+g+"]"+y+" Don't forget to update when next you launch this tool!")
         time.sleep(0.5)
         os.system("figlet *Bye* | lolcat")
