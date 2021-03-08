@@ -25,7 +25,7 @@ os.system("ls")
 os.system("chmod +x install")
 os.system("sh install")
 os.system("cd ..")
-os.system("ls")"
+os.system("ls")
 time.sleep(1.0)
 print("\n\033[2;33m[\033[2;37m✓\033[2;33m]\033[2;32m DONE! \033[2;33mInstallation process completed!\n")
 time.sleep(100.0)
